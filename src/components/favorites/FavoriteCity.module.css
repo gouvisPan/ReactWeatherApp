@@ -1,0 +1,21 @@
+.favorite-item {
+  font-size: 8vmin;
+  /* font-weight: bold; */
+  list-style: none;
+  margin-top: 3vmin;
+  margin-bottom: 4vmin;
+  padding: 10px 20px;
+  border-radius: 15px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.391);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 1vmin;
+}
+
+.remove {
+  max-width: 5vmin;
+  max-height: 5vmin;
+}

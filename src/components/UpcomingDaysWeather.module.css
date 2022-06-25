@@ -1,0 +1,42 @@
+.weather-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 2vmin;
+  padding: 16px;
+}
+
+.upcoming-days-container {
+  width: 80vmin;
+  height: 30vmin;
+}
+
+.future-forecast {
+  border-radius: 8px;
+  background: rgba(60, 60, 61, 0.377);
+  padding: 15px 0px 15px 0px;
+  position: relative;
+  justify-content: center;
+  align-items: none;
+  display: flex;
+  color: white;
+  width: 100%;
+  overflow-y: none;
+
+  width: 80vmin;
+}
+
+@media (max-width: 600px) {
+  .future-forecast {
+    justify-content: start;
+    overflow-y: scroll;
+    width: 90vmin;
+  }
+}
+
+@media (min-width: 800px) {
+  .future-forecast {
+    padding: 1vmin 6vmin;
+    width: 130vmin;
+  }
+}

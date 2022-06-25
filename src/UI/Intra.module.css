@@ -1,0 +1,14 @@
+.intra-style {
+  display: flexbox;
+  font-size: 8vmin;
+  text-align: center;
+  margin: 0 5vmin 0 5vmin;
+  text-shadow: 4px 4px rgba(0, 0, 0, 0.8);
+}
+
+@media (min-width: 800px) {
+  .intra-style {
+    font-size: 5vmin;
+    margin: -4vmin;
+  }
+}

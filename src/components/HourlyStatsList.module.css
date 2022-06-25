@@ -1,0 +1,35 @@
+.hour-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1vmin;
+  font-size: 4vmin;
+  list-style: none;
+  justify-content: start;
+  overflow-x: scroll;
+  height: 32vmin;
+  width: 50vmin;
+
+  color: rgb(66, 66, 66);
+  padding: 0px 5px 0px 5px;
+}
+
+@media (max-width: 600px) {
+  .hour-list {
+    max-width: 25vmin;
+  }
+
+  /* .hourly-shrink{
+    display: none;
+    transition: 0.5s;
+  } */
+}
+
+@media (min-width: 1000px) {
+  /* .hourly-shrink{
+    display: none;
+    transition: 0.5s;
+  } */
+  .hour-list {
+    height: 36vmin;
+  }
+}

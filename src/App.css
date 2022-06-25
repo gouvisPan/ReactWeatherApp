@@ -1,0 +1,130 @@
+.app {
+  background: rgb(172, 195, 240);
+  background: linear-gradient(
+    340deg,
+    rgba(172, 195, 240, 0.7) 0%,
+    rgba(1, 108, 191, 0.7) 55%,
+    rgba(15, 0, 120, 0.7) 95%
+  );
+
+  background-image: url(./assets/weather-changes.gif);
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4s ease-out;
+  min-height: 110vh;
+  min-width: 110vw;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.Clouds {
+  background-image: url(./assets/clouds.jpeg);
+}
+.Clear {
+  background-image: url(./assets/sunny.png);
+}
+.Rain {
+  background-image: url(./assets/rain.jpeg);
+}
+.Snow {
+  background-image: url(./assets/snow.jpg);
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* .myVideo {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; */
+/* } */
+
+.content {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f1f1f1;
+  width: 100%;
+  margin: 30px 0px 0px 0px;
+  gap: 30px;
+}
+
+.top-box {
+  margin: 20px;
+}
+
+.current-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.loading {
+  position: absolute;
+  bottom: 0;
+  font-size: 6vmin;
+}
+
+.favorites {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 30vmin;
+  /* bottom:10vmin; */
+  right: 8vmin;
+
+  background-color: #282c3464;
+  border-radius: 25vmin;
+  padding: 10px;
+  opacity: 80%;
+}
+
+@media (min-width: 600px) {
+  .current-container {
+    /* width: 100%;
+    margin: 30px 0px 0px 0px; */
+    gap: 15vmin;
+  }
+
+  .favorites {
+    width: 12vmin;
+    height: 12vmin;
+  }
+}
+
+@media (min-width: 900px) {
+  .favorites {
+    width: 8vmin;
+    height: 8vmin;
+    bottom: 5vmin;
+    right: 5vmin;
+  }
+
+  .app {
+    min-height: 150vh;
+    min-width: 110vw;
+  }
+}

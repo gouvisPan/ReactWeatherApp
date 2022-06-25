@@ -1,0 +1,78 @@
+.current-stats-secondary-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 4vmin;
+  height: 40vmin;
+}
+
+.current-stats-secondary-left {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 35vmin;
+  font-weight: bold;
+  transition: 150ms ease-in;
+}
+
+.current-stats-secondary-left-expanded {
+  display: flex;
+  justify-content: space-between;
+  gap: 4vmin;
+  width: 35vmin;
+  font-weight: bold;
+}
+
+.current-stats-secondary-left .togglable {
+  display: none;
+}
+
+.togglable {
+  flex: 0 0 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 3vmin;
+}
+.always-shown {
+  display: flex;
+  flex-direction: column;
+  gap: 3vmin;
+}
+
+@media (max-width: 600px) {
+  .current-stats-secondary-card {
+    gap: 8px;
+    font-size: 5vmin;
+  }
+
+  .hourly-shrink {
+    display: none;
+    transition: all 0.1s ease-in;
+  }
+
+  .current-stats-secondary-left-expanded {
+    width: 72vmin;
+    transition: 150ms ease-in;
+  }
+}
+
+@media (min-width: 900px) {
+  .current-stats-secondary-left {
+    display: flex;
+    justify-content: space-between;
+    gap: 4vmin;
+    width: 55vmin;
+    font-weight: bold;
+  }
+  .current-stats-secondary-left-expanded {
+    display: flex;
+    justify-content: space-between;
+    gap: 4vmin;
+    width: 55vmin;
+    font-weight: bold;
+  }
+
+  .current-stats-secondary-left .togglable {
+    display: flex;
+  }
+}

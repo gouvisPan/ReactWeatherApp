@@ -1,0 +1,16 @@
+.hour-item {
+  display: flex;
+  gap: 3vmin;
+  border-top: 0.5px rgba(115, 113, 113, 0.719) solid;
+  padding: 0px -12vmin 0px -12vmin;
+}
+
+.hour-item:first-child {
+  border-top: 0px black solid;
+}
+
+@media (min-width: 900px) {
+  .hour-item {
+    gap: 6vmin;
+  }
+}
