@@ -15,15 +15,17 @@ const useRequest = (location) => {
 
   const getCoordinates = async (location) => {
     const response = await axios.get(`${GEO_URL}q=${location}${API_ID}`);
+    let lat = 0;
+    let lon = 0;
 
     if (!response.data || response.data.length === 0) {
-      setHasError("Location can't be found");
+      setHasError("Location can't be found!");
       setIsLoading(false);
-      return;
+      console.log("PROBLEM");
+    } else {
+      lat = response.data[0].lat;
+      lon = response.data[0].lon;
     }
-
-    const lat = response.data[0].lat;
-    const lon = response.data[0].lon;
 
     return { lat, lon };
   };
@@ -60,7 +62,6 @@ const useRequest = (location) => {
 
     setData({ todaysWeather, upcomingDaysData, hourlyData });
 
-    
     setIsLoading(false);
   };
 

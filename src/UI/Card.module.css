@@ -19,7 +19,8 @@
 }
 
 .card-dark {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  padding: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
   border-radius: 14px;
   background: rgb(255, 255, 255);
   background: linear-gradient(
@@ -28,4 +29,10 @@
     rgba(29, 28, 28, 0.673) 45%,
     rgba(83, 83, 83, 0.5) 95%
   );
+}
+
+@media (min-width: 900px) {
+  .card {
+    padding: 0.5rem;
+  }
 }

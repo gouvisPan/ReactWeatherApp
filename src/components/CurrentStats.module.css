@@ -50,15 +50,35 @@
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
   .current-stats-card {
     width: 130vmin;
-    height: 15vmin;
-    margin-bottom: 40px;
+    height: 10vmin;
+    margin-bottom: 5vmin;
+  }
+
+  .info {
+    display: flex;
+    justify-content: space-between;
+    gap: 10vmin;
+    font-size: 10vmin;
+  }
+
+  .right {
+    gap: 2vmin;
+    padding-right: 1vmin;
+    font-size: 8vmin;
   }
 
   .left {
     gap: 0;
     padding: 3vmin;
+  }
+
+  .fav {
+    width: 5vmin;
+    height: 5vmin;
+    margin-top: 1vmin;
+    margin-right: 0;
   }
 }

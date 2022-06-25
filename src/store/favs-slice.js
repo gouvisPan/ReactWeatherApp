@@ -16,7 +16,7 @@ const favsSlice = createSlice({
     },
     removeCity(state, action) {
       const cityName = action.payload;
-      state.cities = state.cities.filter((city) => city != cityName);
+      state.cities = state.cities.filter((city) => city !== cityName);
     },
   },
 });

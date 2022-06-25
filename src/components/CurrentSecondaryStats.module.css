@@ -57,19 +57,28 @@
 }
 
 @media (min-width: 900px) {
+  .current-stats-secondary-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 4vmin;
+    height: 25vmin;
+  }
+
   .current-stats-secondary-left {
     display: flex;
     justify-content: space-between;
-    gap: 4vmin;
-    width: 55vmin;
-    font-weight: bold;
+    gap: 3vmin;
+    width: 65vmin;
+    font-weight: 580;
   }
+
   .current-stats-secondary-left-expanded {
     display: flex;
     justify-content: space-between;
-    gap: 4vmin;
-    width: 55vmin;
-    font-weight: bold;
+    gap: 3vmin;
+    width: 65vmin;
+    font-weight: 580;
   }
 
   .current-stats-secondary-left .togglable {

@@ -14,7 +14,7 @@ import axios from "axios";
 import favsImg from "../src/assets/favorites.png";
 
 function App() {
-  const [location, setLocation] = useState("Amsterdam");
+  const [location, setLocation] = useState("Thessaloniki");
   const [areFavsShown, setAreFavsShown] = useState(false);
   const [favsError, setFavsError] = useState(false);
 
@@ -31,16 +31,16 @@ function App() {
     hasError: error,
   } = useRequest();
 
-  useEffect(async () => {
-    const response = await axios.put(
-      "https://weatherapp-60b95-default-rtdb.europe-west1.firebasedatabase.app/favs",
-      {
-        favs,
-      }
-    );
+  // useEffect(async () => {
+  //   const response = await axios.put(
+  //     "https://weatherapp-60b95-default-rtdb.europe-west1.firebasedatabase.app/favs",
+  //     {
+  //       favs,
+  //     }
+  //   );
 
-    console.log(response);
-  }, [favs]);
+  //   console.log(response);
+  // }, [favs]);
 
   const searchHandler = (event) => {
     if (event.key === "Enter") {
@@ -83,6 +83,7 @@ function App() {
       )}
       <div className="content">
         {favsError && <Error>No favorites added yet!</Error>}
+
         <SearchBar
           setL={setLocationHandler}
           location={location}
@@ -99,6 +100,7 @@ function App() {
             <CurrentSecondaryStats data={weatherData} />
           </div>
         )}
+
         {weatherData && (
           <UpcomingDaysWeather data={weatherData.upcomingDaysData} />
         )}

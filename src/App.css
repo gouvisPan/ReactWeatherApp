@@ -1,4 +1,5 @@
 .app {
+  margin: auto;
   background: rgb(172, 195, 240);
   background: linear-gradient(
     340deg,
@@ -8,35 +9,23 @@
   );
 
   background-image: url(./assets/weather-changes.gif);
-  background-size: cover;
+  background-size: 100%;
   background-position: bottom;
   transition: 0.4s ease-out;
   min-height: 110vh;
-  min-width: 110vw;
+  min-width: 100vw;
 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
   background-size: cover;
-}
-
-.Clouds {
-  background-image: url(./assets/clouds.jpeg);
-}
-.Clear {
-  background-image: url(./assets/sunny.png);
-}
-.Rain {
-  background-image: url(./assets/rain.jpeg);
-}
-.Snow {
-  background-image: url(./assets/snow.jpg);
 }
 
 html,
 body {
-  margin: 0;
   height: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .App-header {
@@ -53,14 +42,6 @@ body {
 .App-link {
   color: #61dafb;
 }
-
-/* .myVideo {
-  position: relative;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%; */
-/* } */
 
 .content {
   display: inline-flex;
@@ -121,10 +102,25 @@ body {
     height: 8vmin;
     bottom: 5vmin;
     right: 5vmin;
+    background-color: #98939395;
   }
 
   .app {
     min-height: 150vh;
-    min-width: 110vw;
+    min-width: 100vw;
+    background-image: url(./assets/max_width_initial_bg.jpg);
   }
+}
+
+.Clouds {
+  background-image: url(./assets/clouds.jpeg);
+}
+.Clear {
+  background-image: url(./assets/sunny.png);
+}
+.Rain {
+  background-image: url(./assets/rain.jpeg);
+}
+.Snow {
+  background-image: url(./assets/snow.jpg);
 }

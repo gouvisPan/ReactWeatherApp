@@ -19,3 +19,26 @@
   max-width: 5vmin;
   max-height: 5vmin;
 }
+
+@media (min-width: 900px) {
+  .favorite-item {
+    font-size: 5vmin;
+    margin-top: 1vmin;
+    margin-bottom: 2vmin;
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.576);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30vmin;
+    margin-left: 30vmin;
+  }
+
+  .remove {
+    max-width: 3vmin;
+    max-height: 3vmin;
+  }
+}
