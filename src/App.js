@@ -31,16 +31,16 @@ function App() {
     hasError: error,
   } = useRequest();
 
-  useEffect(async () => {
-    const response = await axios.put(
-      "https://weatherapp-60b95-default-rtdb.europe-west1.firebasedatabase.app/favs",
-      {
-        favs,
-      }
-    );
+  // useEffect(async () => {
+  //   const response = await axios.put(
+  //     "https://weatherapp-60b95-default-rtdb.europe-west1.firebasedatabase.app/favs",
+  //     {
+  //       favs,
+  //     }
+  //   );
 
-    console.log(response);
-  }, [favs]);
+  //   console.log(response);
+  // }, [favs]);
 
   const searchHandler = (event) => {
     if (event.key === "Enter") {
