@@ -5,7 +5,8 @@
   font-size: 4vmin;
   list-style: none;
   justify-content: start;
-  overflow-x: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   height: 32vmin;
   width: 50vmin;
 
@@ -24,12 +25,14 @@
   } */
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
   /* .hourly-shrink{
     display: none;
     transition: 0.5s;
   } */
   .hour-list {
-    height: 36vmin;
+    font-size: 2.5vmin;
+    height: 20vmin;
+    width: 35vmin;
   }
 }

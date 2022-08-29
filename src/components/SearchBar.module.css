@@ -39,16 +39,19 @@
     no-repeat 13px center;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .search {
-    width: 30%;
-    height: 1%;
+    font-size: 4vmin;
+    margin-top: -1vmin;
+    margin-bottom: -2vmin;
+    width: 45%;
+    height: 5vmin;
     align-items: flex-start;
   }
 
   .initial {
     width: 20%;
-    height: 40px;
+    height: 5vmin;
     font-size: 4vmin;
   }
 }

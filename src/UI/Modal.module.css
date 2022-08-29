@@ -20,8 +20,9 @@
   animation: slide-down 400ms ease-out forwards;
 }
 
-@media (min-width: 800px) {
-  .modal {
+@media (min-width: 900px) {
+  .backdrop {
+    background-color: rgba(0, 0, 0, 0.9);
   }
 }
 

@@ -34,9 +34,13 @@
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .future-forecast {
-    padding: 1vmin 6vmin;
+    padding: 1vmin 10vmin;
     width: 130vmin;
+  }
+
+  .weather-list {
+    gap: 4vmin;
   }
 }
