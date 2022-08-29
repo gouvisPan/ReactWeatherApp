@@ -41,17 +41,23 @@
 
 @media (min-width: 900px) {
   .search {
+    position: absolute;
+    top: 0;
+    right: 0;
     font-size: 4vmin;
-    margin-top: -1vmin;
-    margin-bottom: -2vmin;
-    width: 45%;
-    height: 5vmin;
-    align-items: flex-start;
+    border-radius: 0 0 0 20px;
+    width: 25%;
+    height: 3rem;
+    margin-top: -0.4rem;
+    font-size: 22px;
   }
-
+  .search:hover {
+    cursor: pointer;
+    box-shadow: -2px 1px 3px 2px rgba(0, 0, 0, 0.12);
+  }
   .initial {
-    width: 20%;
-    height: 5vmin;
-    font-size: 4vmin;
+    width: 25%;
+    height: 6vmin;
+    font-size: 38px;
   }
 }

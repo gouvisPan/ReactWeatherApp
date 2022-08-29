@@ -2,8 +2,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: 4vmin;
-  height: 40vmin;
+  height: 10rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
 .current-stats-secondary-left {

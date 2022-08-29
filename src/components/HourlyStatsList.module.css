@@ -33,6 +33,9 @@
   .hour-list {
     font-size: 2.5vmin;
     height: 20vmin;
-    width: 35vmin;
+    width: max-content;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
   }
 }

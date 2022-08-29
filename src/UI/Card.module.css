@@ -33,6 +33,11 @@
 
 @media (min-width: 900px) {
   .card {
-    padding: 0.5rem;
+    padding: 1.2rem 0.5rem;
+    margin-top: 1rem;
+  }
+  .card-light {
+    padding: 1.2rem 0.5rem;
+    margin-top: 1rem;
   }
 }

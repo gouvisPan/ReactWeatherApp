@@ -73,9 +73,9 @@ body {
   position: fixed;
   width: 60px;
   height: 60px;
-  bottom: 30vmin;
+  bottom: 2rem;
   /* bottom:10vmin; */
-  right: 8vmin;
+  right: 2rem;
 
   background-color: #282c3464;
   border-radius: 25vmin;

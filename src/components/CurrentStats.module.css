@@ -2,7 +2,8 @@
   display: flex;
   justify-content: space-between;
   gap: 15vmin;
-  font-size: 12vmin;
+  font-size: 36px;
+  margin: 0.5rem;
 }
 
 .fav {
@@ -29,7 +30,7 @@
 }
 
 .desc {
-  border-top: solid rgba(77, 74, 74, 0.618) 1vmin;
+  border-top: solid rgba(77, 74, 74, 0.618) 4px;
 }
 
 .current-stats-card {
@@ -55,13 +56,14 @@
     width: 130vmin;
     height: 10vmin;
     margin-bottom: 5vmin;
+    margin-top: 5rem;
   }
 
   .info {
     display: flex;
     justify-content: space-between;
     gap: 10vmin;
-    font-size: 10vmin;
+    font-size: 22px;
   }
 
   .right {
