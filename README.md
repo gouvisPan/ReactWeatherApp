@@ -1,5 +1,4 @@
-# ReactWeatherApp - A weather displaying Web-App
-
+![ReactWeatherApp - A weather displaying Web-App](image.jpg)
 
 ## APP Functionality 
 1. User inputs city name in the input field OR picks a city from his "favorite cities" list 
