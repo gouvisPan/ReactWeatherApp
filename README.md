@@ -12,4 +12,4 @@
 - Axios for handling the openweather API calls, responses and Errors
 
 ## Additional Info
-  The App was developed as an assignment for a job application as a junior developer, it was my first ever complete interaction with React, JS, CSS and Web development in general. Despite the relatively small size of the project, it allowed me to transcript and apply my -at the time- existing knowlege and expirience from Android development in a new, fascinating context.
+ The App was developed as an assignment for a job application as a junior developer, it was my first ever complete interaction with React, JS, CSS and Web development in general. Despite the relatively small size of the project, it allowed me to transcript and apply my -at the time- existing knowlege and expirience from Android development in a new, fascinating context.
